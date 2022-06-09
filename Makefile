@@ -20,10 +20,6 @@ update:
 sloccount:
 	sloccount src/app/ src/command.php
 
-install-box:
-	curl -LSs https://box-project.github.io/box2/installer.php | php
-	mv box.phar /usr/local/bin
-
 release: all
 ifndef desc
 	@echo "Run it as 'make release desc=tralala'"
