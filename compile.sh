@@ -38,7 +38,7 @@ fi
 
 BOX_PATH=vendor/box.phar
 
-php -d phar.readonly=0 "$BOX_PATH" build -c box.json
+php -d phar.readonly=0 "$BOX_PATH" compile -c box.json
 
 cd "$OLD_PWD"
 
